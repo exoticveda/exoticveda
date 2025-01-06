@@ -1,0 +1,163 @@
+ 
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p, ul {
+
+    margin-bottom: 15px;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .terms-container {
+        margin-left: 0;
+        /* margin-left: 30px; */
+
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p, ul {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, ul {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+.return-policy , .shipping-policy,.privacy-policy,.terms-containerrr {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .return-policy h1,
+  .return-policy h2 {
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  .return-policy h3 {
+    color: #34495e;
+    margin-top: 20px;
+  }
+
+  .return-policy p {
+    margin: 10px 0;
+  }
+
+  .return-policy ul {
+    margin: 10px 0 20px 20px;
+    list-style-type: disc;
+  }
+
+  .return-policy ul li {
+    margin-bottom: 8px;
+  }
+
+  .return-policy a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+
+  .return-policy a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9em;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .return-policy {
+      padding: 15px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .return-policy h1,
+    .return-policy h2 {
+      font-size: 1.5em;
+    }
+
+    .return-policy h3 {
+      font-size: 1.2em;
+    }
+
+    footer {
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .return-policy {
+      padding: 10px;
+    }
+
+    .return-policy h1 {
+      font-size: 1.3em;
+    }
+
+    .return-policy h2 {
+      font-size: 1.2em;
+    }
+
+    .return-policy h3 {
+      font-size: 1em;
+    }
+
+    .return-policy ul {
+      margin-left: 15px;
+    }
+  }

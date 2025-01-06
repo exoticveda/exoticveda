@@ -1,0 +1,65 @@
+
+
+ .mt-5 {
+   column-gap: 0;
+ }
+
+ .mt-5 .row {
+
+   display: grid;
+   grid-template-columns: 1fr;
+ }
+
+ .mt-5 .row img {
+   border-radius: 0;
+   height: auto;
+   width: 100%;
+ }
+
+
+
+ @media only screen and (min-width: 481px) {
+   .mt-5 .row {
+     grid-template-columns: 1fr 1fr;
+   }
+ }
+
+ @media only screen and (min-width: 1205px) {
+   .mt-5 .row {
+     grid-template-columns: 1fr 1fr 1fr ;
+   }
+ }
+
+
+
+
+
+ .circle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Change color as needed */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 auto; /* To center the icon inside the card */
+}
+
+.circle-button:hover {
+  background-color: #333; /* Hover color */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.circle-button:hover svg {
+  color: white; /* Change arrow color on hover */
+}
+
+.circle-button svg {
+  color: #333; /* Initial arrow color */
+  font-size: 20px; /* Adjust size as needed */
+}
+
+
+
+

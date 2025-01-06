@@ -1,0 +1,619 @@
+@media (max-width: 768px) {
+
+
+  /* Center the heading and add spacing */
+  .text-center {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Carousel adjustments */
+  .swiper-container {
+    width: 100%;
+    padding: 0 10px;
+    /* Add padding for better alignment on smaller screens */
+  }
+
+  /* Adjust the Swiper slide size for mobile view */
+  .swiper-slide {
+    width: 100% !important;
+    /* Ensure each slide takes full width */
+    max-width: 100%;
+  }
+
+  /* Card styles on mobile */
+  .card {
+
+
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    /* Remove border for a cleaner look */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Image adjustments */
+  .card img {
+    max-width: 100%;
+    min-width: 100%;
+    ;
+    height: 400px;
+    width: 400px;
+    /* Set a max height for images */
+    object-fit: cover;
+  }
+
+  /* Card body adjustments */
+  .card-body {
+    padding: 1rem;
+    text-align: center;
+    /* Center-align content on mobile */
+  }
+
+  /* Product title and description styling */
+  .card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.875rem;
+  }
+
+  /* UpdateInfo link styling */
+  .text-muted {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  /* Price styling */
+  .card h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* Buy Now button styling */
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+
+
+  .recipe-card {
+    flex-direction: column;
+    width: calc(50% - 20px);
+    /* Two cards per row */
+  }
+
+  .recipe-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .haircare-recipe-card {
+    flex-direction: column;
+    width: 100%;
+    /* Two cards per row */
+  }
+
+
+  .haircare-recipe-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    display: none;
+    /* Hide the grid on mobile */
+  }
+
+  .mobile-carousel {
+    display: block;
+    /* Show the carousel on mobile */
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    /* Hide any overflow */
+  }
+
+  .carousel .slide {
+    display: flex;
+    flex-direction: column;
+    /* Adjust to stack items vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    /* Add some padding for spacing */
+  }
+
+  .carousel .slide img {
+    width: auto;
+    /* Ensure image takes full width of the slide */
+    max-height: 200px;
+    /* Keep height constraint */
+    object-fit: cover;
+    /* Crop image to fit container */
+  }
+
+  /* Style carousel dots */
+  .carousel .control-dots {
+    position: absolute;
+    bottom: -10px;
+    /* Place dots just above the bottom edge */
+    width: 100%;
+    /* Make dots span the full width */
+    text-align: center;
+  }
+
+  .carousel .control-dots .dot {
+    background: #007bff;
+    /* Customize dot color */
+    border-radius: 50%;
+    /* Make dots round */
+    width: 10px;
+    /* Adjust size */
+    height: 10px;
+    margin: 0 5px;
+    /* Adjust spacing between dots */
+    display: inline-block;
+    transition: background 0.3s;
+    /* Smooth transition for active dot */
+  }
+
+  .carousel .control-dots .dot.active {
+    background: #0056b3;
+    /* Customize active dot color */
+  }
+
+  /* Style arrows */
+  .carousel .control-arrow {
+    position: absolute;
+    /* Absolute positioning for custom placement */
+    top: 10%;
+    /* Center arrows vertically */
+    transform: translateY(-50%);
+    /* Center arrows vertically */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    border: none;
+    color: white;
+
+    font-size: 24px;
+    /* Adjust arrow size */
+    padding: 10px;
+    z-index: 10;
+    /* Ensure arrows are above other elements */
+  }
+
+  .carousel .control-arrow.control-prev {
+    left: 10px;
+    /* Adjust for spacing */
+  }
+
+  .carousel .control-arrow.control-next {
+    right: 10px;
+    /* Adjust for spacing */
+  }
+
+}
+
+/* Further reduce the number of slides displayed for extra-small screens */
+@media (max-width: 576px) {
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+  /* Make sure the Swiper displays only one slide at a time */
+  .swiper {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+
+ 
+
+  .shikakai-contanienr ul {
+    background-color: rgba(101, 35, 51, 255);
+    font-family: "Alice", serif;
+    text-align: justify;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 30px 20px 10px;
+
+  }
+
+  .Tripahala-contanienr ul {
+    background-color: rgba(246, 203, 160, 255);
+    font-family: "Alice", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    grid-template-columns: 1fr;
+    color: black;
+    padding: 30px 20px 10px;
+
+  }
+
+  .Lemongrass-contanienr ul {
+    background-color: rgba(181, 207, 116, 255);
+    font-family: "Alice", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    grid-template-columns: 1fr;
+    color: black;
+    padding: 30px 20px 10px;
+    font-size: large;
+    text-align: justify;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  .newsletter-container {
+    padding: 15px;
+  }
+
+  .newsletter-form input {
+    padding: 8px;
+  }
+
+  .newsletter-form .btn-submit {
+    padding: 8px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+  }
+
+  /* Adjust arrow and dot positions for smaller screens */
+
+
+  .carousel .control-dots {
+    margin-top: 15px;
+  }
+  .recipe-card {
+    width: 100%;
+    /* Full width for mobile devices */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .recipe-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .recipe-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .recipe-card p {
+    font-size: 0.9rem;
+  }
+
+  .shikakai-contanienr ul {
+    background-color: rgba(101, 35, 51, 255);
+    font-family: "Alice", serif;
+    /* list-style: none; */
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 20px;
+
+
+  }
+
+  .Lemongrass-contanienr ul {
+    margin-right: 10px;
+  }
+
+
+  .haircare-recipe-card {
+    width: 100%;
+    /* Full width for mobile devices */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .haircare-recipe-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .haircare-recipe-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .haircare-recipe-card p {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .right-container p {
+    font-size: 12px;
+  }
+
+  .right-container {
+    width: 25%;
+    height: 140px;
+    border-radius: 10px;
+    position: absolute;
+    /* Allows positioning relative to the parent div */
+    top: 48%;
+    /* Centers vertically */
+    right: 0px;
+    /* Positions it 20px from the right side */
+    transform: translateY(-50%);
+    /* Adjusts the vertical alignment */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background for better readability */
+    padding: 20px;
+    /* Adds some spacing inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: adds a shadow for visual separation */
+    text-align: center;
+    /* Centers the text inside the container */
+  }
+
+  .Aloevera-Description ul {
+    padding: 0 10px;
+  }
+
+  .Aloevera-Description ul li {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .Aloevera-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Aloevera-Description ul li {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .right-container {
+    display: none;
+
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* .Product-Page-Contanier {
+      margin-top: 4.4rem;
+    } */
+
+  .Aloevera-Description {
+    font-size: 5px;
+  }
+
+  .Aloevera-Description ul li {
+    gap: 20px;
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 30px;
+  }
+
+}
+
+
+
+
+@media (max-width:992px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+
+  .carousel__btn {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .btn {
+    padding: 10px 40px;
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .Container .row {
+    flex-direction: column;
+  }
+
+  .Container1 .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    /* Ensure the row takes full width */
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    min-width: 70%;
+    /* Show about two cards at a time on smaller screens */
+  }
+
+  .card1 {
+    max-width: 100%;
+    /* Ensure cards do not exceed the container width */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .header {
+    flex-direction: row;
+    height: 50px;
+    padding: 20px 0;
+  }
+
+  .header .Menu1 ul {
+    gap: 15px;
+  }
+
+
+
+  .carousel__btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .Container {
+    flex-direction: column;
+  }
+
+  .Container1 {
+    width: 100%;
+
+  }
+
+  .Container1 .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+  }
+
+  .Container1 .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .col-md-4 {
+    padding: 5px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* .contact input {
+       width: 100%;
+     } */
+
+
+
+
+  .Container .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Container1 .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+
+  }
+
+  .carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+  }
+
+  /* .contact input{
+    width: 130%;
+    padding:1.5rem 0.5rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    } */
+  .btn {
+    padding: 10px 10px;
+    text-align: center
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 95%;
+  }
+}

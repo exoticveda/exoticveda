@@ -1,0 +1,29 @@
+.Treat{
+   width: 100%;
+   max-width: 100%;
+ 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* margin-top: 10px; */
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.hh{
+   font-size: 20px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   width: 90%;
+
+}
+.Treat p{
+   width: 90%;
+   text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+   .hh{
+      font-size: 12px;
+   }
+}

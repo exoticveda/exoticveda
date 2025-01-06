@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #007BFF;
+  --primary-hover: #0056b3;
+  --border-color: #ddd;
+  --text-color: #333;
+  --bg-color: #fff;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  max-width: 800px;
+  margin: 100px auto;
+  font-family: Arial, sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-bar input {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.search-bar input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.search-bar button {
+  width: 100px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  border: none;
+}
+
+.search-bar button:hover {
+  background-color: var(--primary-hover);
+}
+
+.suggestions-list,
+.search-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.suggestions-list li,
+.search-results li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestions-list li:hover,
+.suggestions-list li.active {
+  background-color: #f1f1f1;
+}
+
+.search-results {
+  text-align: center;
+}
+
+.search-results h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.search-results li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-results img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.search-results a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.search-results a:hover {
+  color: var(--primary-color);
+}
+
+.search-results h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.search-results p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.arrow-icon {
+  margin-left: auto;
+}

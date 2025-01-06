@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+  background-color: #fff;
+}
+
+/* Contact Form Container with Animation */
+.contact {
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  animation: fadeIn 1.5s ease-in-out; /* Animation added */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact p {
+  font-size: 1rem;
+  padding-bottom: 20px;
+  letter-spacing: normal;
+}
+
+/* Common styling for input, textarea, and select with focus animation */
+.contact input, .contact textarea, select {
+  width: 70%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease; /* Smooth transition for input fields */
+}
+
+.contact input:focus, .contact textarea:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glowing effect on focus */
+  transform: scale(1.03); /* Slightly enlarge on focus */
+}
+
+/* Button Styling with Hover and Click Animations */
+.button {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+
+}
+
+.button .btn {
+  /* padding: 0.75rem 1.5rem; */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out; /* Smooth transition for buttons */
+  position: relative;
+  overflow: hidden;
+}
+
+.button .btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.6s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.button .btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.button .btn:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+  transform: translateY(-3px); /* Elevate the button */
+}
+
+.button .btn:active {
+  transform: scale(0.98); /* Shrink on click */
+}
+
+.button .btn span {
+  font-weight: bold;
+}
+
+/* Toast Styling */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+
+}
+
+
+.Toastify__toast--error {
+  color: black;
+}
+
+.Toastify__close-button {
+  color: white;
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  font-weight: 900;
+  font-size: medium;
+ /* Shaking effect on error */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem;
+  }
+
+  .contact input, .contact textarea, select {
+    width: 100%;
+  }
+
+  .Toastify__toast {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact p {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .button .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

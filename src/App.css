@@ -1,0 +1,434 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.grdiid{
+display: grid;
+grid-template-columns: 1fr  1fr ;
+column-gap: 10px;
+row-gap:10px;
+
+}
+@media (max-width: 600px){
+  .grdiid{
+    grid-template-columns: 1fr ;
+  }
+}
+
+a:hover {
+  color: #007bff;
+  font-weight: 20px;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+  padding: 1.5rem;
+
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  /* margin-top: 4.2rem; */
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.carousel__btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel__btn--prev {
+  left: 0;
+}
+
+.carousel__btn--next {
+  right: 0;
+}
+
+.carousel__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel__img:hover {
+  transform: scale(1.05);
+}
+
+.Container {
+
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.Container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+  background-color: #f0f0f0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+  text-align: center;
+}
+
+.col-md-4 {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  text-align: center;
+  padding: 10px;
+}
+
+.col-md-4:hover {
+  box-shadow: 1px 8px 20px grey;
+  transition: box-shadow 0.6s ease-in;
+}
+
+.btn {
+  background-color: #f0f0f0;
+  color: black;
+  font-size: 20px;
+  padding: 10px 80px;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  background-color: #350f0f;
+  color: white;
+  cursor: pointer;
+}
+
+/* Contact Section */
+/* .contact {
+  margin: 4rem;
+  padding: 4rem;
+} */
+
+/* .contact p {
+  letter-spacing: 0px;
+  font-size: 15px;
+  padding-bottom: 20px;
+} */
+
+/* .contact input {
+  width: 100%;
+  padding: 1.5rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+} */
+
+/* .contact .btn:hover {
+  color: #f0f0f0;
+} */
+
+.button {
+  display: flex;
+  gap: 30px;
+}
+
+/* Media Queries for Responsive Design */
+
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card a:hover {
+  color: blue;
+  z-index: 9;
+}
+
+.Footer-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid gray;
+
+
+}
+
+
+
+/* =======scorllbar starts  =========== */
+
+/* Custom scrollbar styles */
+/* Custom scrollbar styles */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the entire scrollbar */
+  height: 12px;
+  /* Height for horizontal scrollbar (if needed) */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* Light gray color for the tracking area */
+  border-radius: 10px;
+  /* Rounded corners for the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #007BFF;
+  /* Bright blue color for the thumb */
+  border-radius: 10px;
+  /* Rounded corners for the thumb */
+  border: 3px solid #d9d9d9;
+  /* Soft border around the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+  /* Darker blue shade on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Optional: Style for scrollbar on the side for better visibility */
+body::-webkit-scrollbar-corner {
+  background: #f0f0f0;
+  /* Color for the corner (intersection of vertical and horizontal) */
+}
+
+/* Optional: Add a custom scrollbar for smoother scrolling */
+html {
+  scrollbar-width: thin;
+  /* For Firefox: thin scrollbar */
+  scrollbar-color: #007BFF #f0f0f0;
+  /* Thumb color and track color for Firefox */
+}
+
+
+/* ============End ScollBar ============= */
+
+
+
+
+
+
+
+
+
+.newsletter-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter-form .btn-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form .btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 15px;
+  color: #007bff;
+}
+
+/* Responsive Design */
+
+
+
+/* ===========Loader=========== */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  /* Light background for the loader */
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top: 6px solid blue;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+
+
+
+
+/* =======Transtion ===== */
+.skincare-section {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title,
+.intro,
+.subtitle,
+.description,
+.ingredients-list li,
+.cta-title,
+.cta-description,
+.cta-button {
+  opacity: 0;
+  transform: translateX(-50%);
+  animation: slideIn 0.5s forwards;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ingredients-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredients-list li {
+  margin-bottom: 10px;
+  animation-delay: 0.2s;
+}
+
+.ingredients-list strong {
+  color: #007BFF;
+}
+
+.cta-button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  animation-delay: 1s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.not-found-link {
+  position: absolute;
+  right: 20px;
+  right: 35%;
+  /* Adjust spacing from the right edge */
+  top: 60%;
+  /* Center vertically */
+  transform: translateY(-50%);
+  /* Center vertically */
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  /* White text color */
+  text-decoration: none;
+  border-radius: 5px;
+  /* Rounded corners for the button */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  /* Smooth background color transition on hover */
+}

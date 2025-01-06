@@ -1,0 +1,273 @@
+#ulnav {
+
+  font-family: "Alice", serif;
+  font-style: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+
+}
+
+nav {
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(15px);
+  background-color: beigeee;
+  height: 70px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#navbar1 li {
+
+  font-family: "Alice", serif;
+  font-weight: bold;
+
+
+  padding: 0 20px;
+  margin: 0 10px;
+  list-style: none;
+  position: relative;
+}
+
+#navbar1 li a {
+  text-decoration: none;
+  color: rgb(10, 12, 15);
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar1 li a:hover,
+#navbar1 li a.active {
+  color: rgb(115, 231, 150);
+}
+
+#navbar1 li a:hover::after,
+#navbar1 li a.active::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background: rgb(115, 231, 150);
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+}
+
+#resposive {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar1 {
+    display: none;
+    /* Hide the navbar on smaller screens by default */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    top: 70%;
+    backdrop-filter: blur(15px);
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+   
+  }
+
+  #navbar1.active {
+    display: flex;
+
+  }
+
+  #navbar1 li {
+    margin-bottom: 25px;
+  }
+
+  #resposive {
+    display: block;
+   
+  }
+
+  #resposive i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #navbar1 a {
+    color: #333;
+
+  }
+
+  #navbar1 a:hover {
+    color: #ff5e62;
+  }
+
+  #resposive {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  #ulnav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    gap: 16px
+  }
+}
+
+
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  /* Position relative to the parent li */
+}
+
+.dropdown-menu {
+
+  display: none;
+  /* Initially hide the dropdown */
+  position: absolute;
+  /* Position dropdown absolutely under parent */
+  top: 100%;
+  /* Align the dropdown below the parent */
+  left: 0;
+  /* Align to the left */
+  background-color: rgb(236, 255, 247);
+  /* Background color */
+  padding: 10px 0;
+  /* Padding for dropdown items */
+  list-style: none;
+  /* Remove default list styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow for dropdown */
+  border-radius: 4px;
+  /* Rounded corners */
+  z-index: 9999;
+  /* Ensure dropdown is above other elements */
+  width: 250px;
+  /* Set a fixed width for the dropdown */
+}
+
+/* Display dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  /* Show dropdown on hover */
+}
+
+/* Style dropdown menu items */
+.dropdown-menu li {
+  padding: 10px 15px;
+  /* Padding for dropdown items */
+  color: #333;
+  /* Text color */
+  cursor: pointer;
+  /* Change cursor to pointer */
+}
+
+.dropdown-menu li:hover {
+  background-color: white;
+  /* Change background on hover */
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Text color */
+  display: block;
+  /* Make the link a block element */
+}
+
+.dropdown-menu a:hover {
+  color: #ff5e62;
+  /* Hover color for links */
+}
+
+@media screen and (max-width: 1024px) {
+
+  .dropdown-menu {
+
+    /* background-image: url(''); */
+    display: none;
+    /* Initially hide the dropdown */
+    position: absolute;
+    /* Position dropdown absolutely under parent */
+    top: 20%;
+    /* Align the dropdown below the parent */
+    left: 170px;
+    /* Align to the left */
+    background-color: transparent;
+    padding: 10px 0;
+    /* Padding for dropdown items */
+    list-style: none;
+    /* Remove default list styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for dropdown */
+    border-radius: 4px;
+    /* Rounded corners */
+    z-index: 9999;
+    /* Ensure dropdown is above other elements */
+    width: 250px;
+    /* Set a fixed width for the dropdown */
+  }
+}
+
+
+
+
+/* header.css */
+.header {
+  transition: background-color 0.5s ease;
+}
+
+.header-lemongrass {
+  background-color: rgba(181, 207, 116, 1);
+  /* Updated RGBA value */
+}
+
+.header-triphala {
+  background-color: rgba(249, 225, 199, 255);
+  /* Updated RGBA value */
+}
+
+.header-shika {
+  background-color: #fff;
+  /* background-color: rgba(101, 35, 51, 255);  */
+
+}
+
+
+.header-jamun {
+  background-color: rgba(159, 130, 188, 255);
+}
+
+.main-content {
+  margin-top: 70px;
+}
