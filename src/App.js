@@ -19,19 +19,19 @@ function App() {
     }, []);
 
     return (
-<>
+        <BrowserRouter>
             <Header />
 
-             {!isLoading ? (
+            {!isLoading ? (
                 <>
 
                     <AppRoutes />
                     <Footer />
-              </>
+                </>
             ) : (
-          <Loader/>
+                <Loader />
             )}
-            </>
+        </BrowserRouter>
     );
 }
 
