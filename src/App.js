@@ -6,7 +6,7 @@ import Footer from './Components/Footer/Footer';
 import AppRoutes from './Routes/AppRoutes';
 import Loader from './Components/loader/Loader';
 import './Components/Css/Mediaq.css'
- 
+
 function App() {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -19,19 +19,19 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter>
+<>
             <Header />
 
-            {!isLoading ? (
+             {!isLoading ? (
                 <>
 
                     <AppRoutes />
                     <Footer />
-                </>
+              </>
             ) : (
-                <Loader />
+          <Loader/>
             )}
-        </BrowserRouter>
+            </>
     );
 }
 
