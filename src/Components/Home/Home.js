@@ -28,9 +28,7 @@ const Home = () => {
             <Cateogry />
             <Product />
             <Treatment />
-            {/* <div style={{ display: 'flex', gap: '0', flexDirection: 'column' }}>
-                <img src={img22} style={{ maxWidth: '100%', minWidth: '100%' }} alt="exotic-veda" loading="lazy" />
-            </div> */}
+         
             <Aboutus />
             <FAQ/>
             <Contactus />

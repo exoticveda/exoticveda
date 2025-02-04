@@ -65,7 +65,8 @@ const Contactus = () => {
         forward to hearing from you and assisting with anything you need!
       </p>
       <p className="catering_test">Address-1001 S MAIN ST STE 500 KALISPELL, MT 59901</p>
-      
+      <p className="catering_test">Our Team Will Response You Within 48 Hours </p>
+
       <form ref={form} onSubmit={handleSendMessage}>
         <input
           onChange={handleNameChange}
@@ -109,7 +110,7 @@ const Contactus = () => {
           name="user_message"
           placeholder="Message for Us"
         />
-        
+
         <div className="button">
           <button type="submit" className='btn'><span>SEND MESSAGE</span></button>
           <button onClick={handleClear} className='btn'><span>CLEAR MESSAGE</span></button>
