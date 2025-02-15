@@ -11,7 +11,7 @@ import FAQ from "../FAQ/FAQ.js";
 
 const Home = () => {
     const images = [
-        assets.homebanner6,
+        // assets.homebanner6,
         assets.homebanner7,
 
         assets.homebanner1,
@@ -28,7 +28,7 @@ const Home = () => {
             <Cateogry />
             <Product />
             <Treatment />
-         
+
             <Aboutus />
             <FAQ/>
             <Contactus />
