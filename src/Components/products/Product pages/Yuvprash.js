@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { assets } from '../Assets/prodimg/assets';
 import Produuct from '../../Product-Details/Produuct';
-import { RelatedProducts } from './RelatedProducts';
+ 
 const Yuvprash = () => {
     const images = [
         assets.yuvprash,
