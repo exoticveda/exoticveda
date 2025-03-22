@@ -23,7 +23,7 @@ const Footer = () => {
       links: [
         { name: 'Our Shop', path: 'https://revaais.com/' },
         { name: 'Address-1001 S MAIN ST STE 500 KALISPELL, MT 59901', path: 'https://maps.app.goo.gl/vqpQwQxJdm5aj3nV6 ' },
-        { name: 'support@revaais.com', path: 'mailto:support@revaais.com' },
+        { name: 'support@exoticveda.com', path: 'mailto:support@exoticveda.com' },
 
       ]
     },
